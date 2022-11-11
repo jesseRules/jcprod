@@ -1,0 +1,28 @@
+<div class="mainChartView mt-4 mb-4">
+    <div class="chartHeader">
+      <h1>Chart.js Example</h1>
+      <p>Click on the Reload Data button to view realtime changes.</p>
+      <p>
+        <a
+          href="https://github.com/jesseRules/JesseCarlbergProduction/tree/main/JesseCarlbergProduction/ClientApp/src/app/components/projects/chart-sample"
+          target="_blank"
+          >View Code</a
+        >
+      </p>
+    </div>
+    <div class="chart-container">
+      <button mat-raised-button color="primary" (click)="reloadData()">
+        Reload Data
+      </button>
+      <canvas
+        baseChart
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [options]="lineChartOptions"
+        [legend]="lineChartLegend"
+        [plugins]="lineChartPlugins"
+      >
+      </canvas>
+    </div>
+  </div>
+  

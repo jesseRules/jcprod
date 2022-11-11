@@ -1,0 +1,22 @@
+.ytubeView {
+    height: 800px;
+    width: 100%;
+    padding-bottom: 25px;
+    height: -webkit-fill-available;
+  }
+  
+  .ytube-card {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 25px;
+    height: 650px;
+    margin-bottom: 35px;
+  }
+  
+
+  .ytubeYoutubeView {
+    overflow: hidden;
+     width: 100%;
+     min-height: calc(100vh - 148px);
+   }
+  

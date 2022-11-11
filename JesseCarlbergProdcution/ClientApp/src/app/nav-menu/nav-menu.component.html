@@ -1,0 +1,144 @@
+<mat-sidenav-container *ngIf="isMobile">
+  <mat-sidenav #sidenav fixedInViewport [attr.role]="isMobile ? 'dialog' : 'navigation'"
+    [mode]="isMobile ? 'over' : 'over'" [opened]="isOpened" fxLayout="row">
+    <mat-toolbar fxFlexOrder="-1" class="whitebg">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="sidenav.toggle()">
+        <img class="navlogoDesktop" alt="JCP icon"
+          src="https://jessecarlbergproduction.azureedge.net/images/logo.png" />
+      </button>
+    </mat-toolbar>
+    <mat-nav-list fxFlexOrder="1" class="navlisttop">
+      <a mat-list-item routerLink="/home" routerLinkActive="active-link" aria-label="Link that takes you to home page">
+        <mat-icon class="nav-mat-icon" aria-hidden="false" aria-label="Portfolio">home</mat-icon>
+        Home
+      </a>
+      <a mat-list-item routerLink="/portfolio" routerLinkActive="active-link"
+        aria-label="Link that takes you to the portfolio">
+        <mat-icon class="nav-mat-icon" aria-hidden="false" aria-label="Portfolio">dashboard</mat-icon>
+        Portfolio
+      </a>
+      <a mat-list-item routerLink="/photography" routerLinkActive="active-link"
+        aria-label="Link that takes you to photography">
+        <mat-icon class="nav-mat-icon" aria-hidden="false" aria-label="Portfolio">groups</mat-icon>
+        Photography
+      </a>
+      <a mat-list-item routerLink="/consulting" routerLinkActive="active-link"
+        aria-label="Link that takes you to consulting">
+        <mat-icon class="nav-mat-icon" aria-hidden="false" aria-label="Portfolio">handshake</mat-icon>
+        Consulting
+      </a>
+      <a mat-list-item routerLink="/coding" routerLinkActive="active-link"
+        aria-label="Link that takes you to the coding page">
+        <mat-icon class="nav-mat-icon" aria-hidden="false" aria-label="Portfolio">code</mat-icon>
+        Coding
+      </a>
+      <a mat-list-item routerLink="/blog" routerLinkActive="active-link" aria-label="Link that takes you to my blog">
+        <mat-icon class="nav-mat-icon" aria-hidden="false" aria-label="Portfolio">book</mat-icon>
+        Blog
+      </a>
+
+      <a mat-list-item routerLink="/about" routerLinkActive="active-link">
+        <mat-icon class="nav-mat-icon" aria-hidden="false" aria-label="Privacy">privacy_tip</mat-icon>
+        About
+      </a>
+    </mat-nav-list>
+    <mat-divider></mat-divider>
+  </mat-sidenav>
+
+  <mat-sidenav-content fxLayout="column">
+    <header role="banner">
+      <mat-toolbar class="clickMeForReal whtmattoolbar">
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span>
+          <button type="button" aria-label="Toggle sidenav" class="navIconBtn" mat-icon-button
+            (click)="sidenav.toggle()">
+            <img class="navlogoMobile" alt="JCP icon"
+              src="https://jessecarlbergproduction.azureedge.net/images/logo.png" />
+          </button>
+        </span>
+        <span>
+          <strong class="sstheader">Jesse Carlberg</strong>
+        </span>
+
+        <span class="search-spacer"></span>
+      </mat-toolbar>
+    </header>
+
+    <mat-divider></mat-divider>
+    <main class="routercontainer" fxFlex="1 1 auto">
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<div *ngIf="!isMobile">
+  <div class="container mx-0 px-0 mx-sm-auto px-sm-auto">
+    <mat-toolbar class="whtmattoolbar">
+      <mat-toolbar-row>
+        <span>
+          <span aria-label="Toggle sidenav" class="navIconDesktopBtn" mat-icon-button>
+            <img class="navlogoDesktop" alt="JCP icon"
+              src="https://jessecarlbergproduction.azureedge.net/images/logo.png" />
+          </span>
+
+        </span>
+        <span>
+          <strong class="sstheader" routerLink="/about">Jesse Carlberg</strong>
+        </span>
+        <mat-nav-list role="navigation" *ngIf="!isMobile">
+          <a mat-list-item routerLink="/home" class="navbutton" routerLinkActive="active-link"
+            aria-label="Link that takes you to my home page">
+            Home
+          </a>
+        </mat-nav-list>
+        <mat-nav-list role="navigation" *ngIf="!isMobile">
+          <a mat-list-item routerLink="/portfolio" class="navbutton" routerLinkActive="active-link"
+            aria-label="Link that takes you to my portfolio">
+            Portfolio
+          </a>
+        </mat-nav-list>
+        <mat-nav-list role="navigation">
+          <a mat-list-item routerLink="/photography" class="navbutton" routerLinkActive="active-link"
+            aria-label="Link that takes you to photograpy page">
+            Photography
+          </a>
+        </mat-nav-list>
+        <mat-nav-list role="navigation">
+          <a mat-list-item routerLink="/coding" class="navbutton" routerLinkActive="active-link"
+            aria-label="Link that takes you to coding">
+            Coding
+          </a>
+        </mat-nav-list>
+        <mat-nav-list role="navigation">
+          <a mat-list-item routerLink="/blog" class="navbutton" routerLinkActive="active-link"
+            aria-label="Link that takes you to my blog">
+            Blog
+          </a>
+        </mat-nav-list>
+        <span class="tbar-spacer"></span>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="JCP JCP icon-button with a menu">
+          <mat-icon>contact_support</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item routerLink="/about">
+            <mat-icon>person</mat-icon>
+            <span>About Me</span>
+          </button>
+          <button mat-menu-item routerLink="/contact">
+            <mat-icon>contact_mail</mat-icon>
+            <span>Contact Me</span>
+          </button>
+        </mat-menu>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-divider class="mainDivider"></mat-divider>
+    <main class="routercontainer">
+      <router-outlet></router-outlet>
+    </main>
+
+  </div>
+</div>
+<app-nav-footer></app-nav-footer>

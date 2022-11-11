@@ -1,0 +1,30 @@
+<footer class="mainfooter">
+    <div class="container mx-0 px-0 mx-sm-auto px-sm-auto">
+        <mat-toolbar color="secondary" *ngIf="!showMobileFooter">
+            <mat-toolbar-row>
+                <span routerLink="/about">
+                    <img class="logoimg" src="https://jessecarlbergproduction.azureedge.net/images/logo.png"
+                        alt="privacy statement" />
+                </span>
+                <span class="tbar-spacer"></span>
+                <span class="copyRightF">© {{ currentYear }} Powered by Jesse's free time
+             
+                    </span>
+                <span class="tbar-spacer"></span>
+                <span><a class="footerlink" routerLink="/privacy">Legal & Privacy</a></span>
+            </mat-toolbar-row>
+        </mat-toolbar>
+
+        <mat-toolbar color="secondary" *ngIf="showMobileFooter">
+            <mat-toolbar-row>
+                <span class="tbar-spacer"></span>
+                <span class="copyRightF">© {{ currentYear }} Powered by Jesse's free time</span>
+                <span class="tbar-spacer"></span>
+            </mat-toolbar-row>
+            <mat-toolbar-row>
+                <span class="tbar-spacer"></span>
+                <span><a class="footerlink" routerLink="/privacy">Legal & Privacy</a></span>
+            </mat-toolbar-row>
+        </mat-toolbar>
+    </div>
+</footer>

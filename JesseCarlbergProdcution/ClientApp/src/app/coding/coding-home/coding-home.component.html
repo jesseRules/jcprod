@@ -1,0 +1,345 @@
+<div class="mainView codingView mb-4">
+    <div class="headerCard mt-4">
+        <div class="fixedHeader">
+            <div class="intro-text">
+                <div class="intro-lead-in">Let's get started</div>
+                <div class="intro-heading">Coding/Dev Work</div>
+            </div>
+        </div>
+        <img mat-card-image class="heroImg" loading="eager"
+            src="https://jessecarlbergproduction.azureedge.net/images/books.jpg" alt="books" />
+    </div>
+
+    <section id="services" class="mpadding">
+        <div class="m-hero-item">
+            <h2 class="c-heading-2">Developer Tools</h2>
+            <h3 class="section-subheading text-muted">Simple tools.</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-12 service-card">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>Markdown Editor</mat-card-title>
+                        <mat-card-subtitle>Markdown to HTML</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://jessecarlbergproduction.azureedge.net/images/markdownblog.jpg"
+                        alt="Markdown Editor" routerLink="/addpost" />
+                    <mat-card-content>
+                        <p>
+                            Using Monaco Editor (VS Code) to transform Markdown into HTML and
+                            vice versa. This tool is actually what I use to generate the blog
+                            posts for this site. The output is close to what you would find on
+                            APIs like Medium.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <!-- <button mat-button routerLink="/addpost">See it</button> -->
+                        <button mat-button>
+                            <a class="srcBtn"
+                                href="https://github.com/jesseRules/JesseCarlbergProduction/tree/main/JesseCarlbergProduction/ClientApp/src/app/components/blog-editor"
+                                target="_blank">View Source Code</a>
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+            <div class="col-md-4 col-sm-12 service-card">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>JSON Beautifier</mat-card-title>
+                        <mat-card-subtitle>Lots of quotation marks in a row.</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://jessecarlbergproduction.azureedge.net/images/jsonBeautifier.jpg"
+                        alt="JSON but pretty" routerLink="/json-beautifier" />
+                    <mat-card-content>
+                        <p>
+                            A real straight forward JSON beautifier that doesn't save or do
+                            anything with your data but beautify it. I ended up using this a
+                            ton while coding because although you can do it in Notepad++ and
+                            even VS Code you have to set up the plugins just right and do a
+                            bunch of fancy work. Posting data from APIs to the web always
+                            makes me nervous, so I just made my own.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <!-- <button mat-button routerLink="/json-beautifier">
+                            Got JSON? Need it pretty?
+                        </button> -->
+                        <button mat-button>
+                            <a class="srcBtn"
+                                href="https://github.com/jesseRules/JesseCarlbergProduction/tree/main/JesseCarlbergProduction/ClientApp/src/app/components/projects/json-beautify"
+                                target="_blank">Source Code</a>
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+            <div class="col-md-4 col-sm-12 service-card">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>CodeBox</mat-card-title>
+                        <mat-card-subtitle> A front-end sandbox </mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://jessecarlbergproduction.azureedge.net/images/codebox_app.jpg"
+                        alt="Code BOX" routerLink="/codebox" />
+                    <mat-card-content>
+                        <p>
+                            A straightforward front-end sandbox. I use this tool to keep
+                            snippets of code I want to use later. I also use this to try out
+                            some front-end stuff I don't want to have to wait over and over
+                            for it to render. This is clean, simple and built for doing work.
+                        </p>
+                        <p>I'm still working on this one, it's rough. Lol.</p>
+                    </mat-card-content>
+                    <!-- <mat-card-actions>
+                        <button mat-button routerLink="/codebox">CodeBox</button>
+                    </mat-card-actions> -->
+                </mat-card>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="mpadding gridpad">
+        <div class="m-hero-item">
+            <h2 class="c-heading-2">Sample Projects/Code</h2>
+            <h3 class="section-subheading text-muted">Easy to use code.</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-12 service-card">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>Angular Integrated Youtube</mat-card-title>
+                        <mat-card-subtitle>Embedded videos</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://jessecarlbergproduction.azureedge.net/images/youtubeexample.jpg"
+                        alt="Youtube player" routerLink="/projects/youtube-sample" />
+                    <mat-card-content>
+                        <p>
+                            Angular flavored Angular developed YouTube player. A real quick
+                            overview on how to integrate YouTube videos into an Angular site.
+                            I include some info embedding videos on other platforms and easy
+                            to fix errors you will run into.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button routerLink="/projects/youtube-sample">
+                            Today we learn YouTube!
+                        </button>
+                        <button mat-button>
+                            <a class="srcBtn"
+                                href="https://github.com/jesseRules/JesseCarlbergProduction/tree/main/JesseCarlbergProduction/ClientApp/src/app/components/projects/ytube-example"
+                                target="_blank">View Source Code</a>
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+            <div class="col-md-4 col-sm-12 service-card">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>RSS News Feed</mat-card-title>
+                        <mat-card-subtitle>XML Newsfeed to Angular & JSON</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://jessecarlbergproduction.azureedge.net/images/newsfeed.jpg"
+                        alt="RSS Feed" />
+                    <mat-card-content>
+                        <p>
+                            Making the news. Taking an XML RSS news feed and converting it
+                            into JSON. Then taking that JSON and displaying it in pretty
+                            pretty Material Angular. Take a look and see how I did it.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button>
+                            <a class="srcBtn"
+                                href="https://github.com/jesseRules/JesseCarlbergProduction/blob/main/JesseCarlbergProduction/ClientApp/src/app/components/projects/rss-feed/rss-feed.component.ts"
+                                target="_blank">View Source Code</a>
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+            <div class="col-md-4 col-sm-12 service-card">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>Twitter API 2 Example</mat-card-title>
+                        <mat-card-subtitle>Using Twitter API 2</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://jessecarlbergproduction.azureedge.net/images/twitter2Sample.jpg"
+                        alt="Twitter 2 Feed" routerLink="/projects/twitter2-sample" />
+                    <mat-card-content>
+                        <p>
+                            Basically, the same thing as the other Twitter example but this
+                            uses the new and objectively improved Twitter API 2. The users are
+                            stripped out of the twitter feed to make it easier to do analytics
+                            on, but if you want to display the tweets you have to add them
+                            back in. I did that here, but I also have the straight JSON
+                            available too.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button routerLink="/projects/twitter2-sample">
+                            Twittering using latest API
+                        </button>
+                        <button mat-button>
+                            <a class="srcBtn"
+                                href="https://github.com/jesseRules/JesseCarlbergProduction/blob/main/JesseCarlbergProduction/Services/Twitter2Service.cs"
+                                target="_blank">Source Code</a>
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+
+        </div>
+        <div class="row mt-4">
+
+            <div class="col-md-4 col-sm-12 service-card">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>My Photography Site</mat-card-title>
+                        <mat-card-subtitle>Jesse Carlberg Photography</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://jessecarlbergproduction.azureedge.net/images/jcphotographydev.jpg"
+                        alt="jcp photography" />
+                    <mat-card-content>
+                        <p>
+                            My professional photography website. Built using C#, ASP.Net, and
+                            the front-end is all in <strong>React</strong>. Like this site, I
+                            built this in a couple days so be nice. As a developer, I don't
+                            get paid to build my own sites, so working on them is a labor of
+                            love. But not love love, more like FB friend kind of love where I
+                            look at it once in a while and throw a like or two.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button (click)="goToLink('https://jessecarlbergphotography.com/')">
+                            Go to Site
+                        </button>
+                        <button mat-button>
+                            <a class="srcBtn" href="https://github.com/jesseRules/jcprodphotography"
+                                target="_blank">View Source Code</a>
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+            <div class="col-md-4 col-sm-12 service-card">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>Azure Blob Storage</mat-card-title>
+                        <mat-card-subtitle>Using Azure to Host Pictures</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://jessecarlbergproduction.azureedge.net/images/azureImgExample.jpg"
+                        alt="Azure Image Feed" routerLink="/projects/azure-photos-sample" />
+                    <mat-card-content>
+                        <p>
+                            I needed a way to host pictures for this website and an upcoming
+                            photography website I am working on. I settled on using Azure Blob
+                            Services to host the images. The hosting fees are cheap and it
+                            loads pretty fast. Check the code out and see some examples on
+                            this page.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button routerLink="/projects/azure-photos-sample">
+                            See how to host pictures
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+            <div class="col-md-4 col-sm-12 service-card">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>Google Analytics API</mat-card-title>
+                        <mat-card-subtitle>ETL Example w/ SQL!</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://jessecarlbergproduction.azureedge.net/images/googleapiexample.png"
+                        alt="Google API Example" routerLink="/projects/azure-photos-sample" />
+                    <mat-card-content>
+                        <p>
+                            Want to see how to do an ETL? That's where we go get data from one
+                            place, Google Analytics in this case, and move it to another
+                            place, like a SQL Database. Come on, all the cool kids are doing
+                            it.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                  
+                        <button mat-button>
+                            <a class="srcBtn" href="https://github.com/jesseRules/googleanalyticsetl"
+                                target="_blank">Source Code</a>
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="siteSection">
+        <div class="m-hero-item">
+            <h2 class="c-heading-2">Coding This Site</h2>
+            <h3 class="section-subheading text-muted">
+                Check out how I built (<i>building?</i>) this website.
+            </h3>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-4 offset-md-4 col-sm-12 px-4">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>Coding this Website</mat-card-title>
+                        <mat-card-subtitle>Making me look good</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div class="stackWrapper">
+                            <h3>Stack used on this site</h3>
+                            <p>
+                                <img class="logoImg"
+                                    src="https://jessecarlbergproduction.azureedge.net/images/angular-logo.png"
+                                    title="Angular" />
+                                <img class="logoImg"
+                                    src="https://jessecarlbergproduction.azureedge.net/images/mongo-logo.png"
+                                    title="Mongo" /><img class="logoImg"
+                                    src="https://jessecarlbergproduction.azureedge.net/images/dotnetcore-logo.png"
+                                    title="NetCore" />
+                                <img class="logoImg"
+                                    src="https://jessecarlbergproduction.azureedge.net/images/Azure-logo.png"
+                                    title="Azure" />
+                            </p>
+
+                            <h3>Services and APIs used</h3>
+                            <p>
+                                <img src="https://jessecarlbergproduction.azureedge.net/images/googlemap-logo.png"
+                                    title="Google Maps" />
+                                <img class="logoImg"
+                                    src="https://jessecarlbergproduction.azureedge.net/images/analytics-logo.png"
+                                    title="Google Analytics" />
+                                <img class="logoImg"
+                                    src="https://jessecarlbergproduction.azureedge.net/images/twitter-logo.png"
+                                    title="Twitter" />
+                            </p>
+                            <h3>This website was coded in</h3>
+                            <p>
+                                <img class="logoImg"
+                                    src="https://jessecarlbergproduction.azureedge.net/images/javascript-logo.png"
+                                    title="JavaScript" />
+                                <img class="logoImg"
+                                    src="https://jessecarlbergproduction.azureedge.net/images/csharp-logo.png"
+                                    title="C#" /><img
+                                    src="https://jessecarlbergproduction.azureedge.net/images/typescript_logo_new.png"
+                                    title="TypeScript" />
+                            </p>
+                        </div>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button>
+                            <a class="aBtn"
+                                href="https://github.com/jesseRules/JesseCarlbergProduction/tree/main/JesseCarlbergProduction"
+                                target="_blank">View Source Code</a>
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </section>
+</div>

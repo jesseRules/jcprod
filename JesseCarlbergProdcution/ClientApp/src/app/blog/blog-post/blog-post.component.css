@@ -1,0 +1,45 @@
+.blogMainView {
+    min-height: 2000px;
+    padding-bottom: 25px;
+    height: auto;
+    overflow: hidden;
+  }
+
+
+.blogMainView pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: auto;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .blogMainView blockquote {
+    display: block;
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee;
+  }
+  
+  .blogMainView img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .marginBox {
+    margin: 15px;
+    width: 100%;
+  }
+  

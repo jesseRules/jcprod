@@ -1,0 +1,538 @@
+.mainH1 {
+    font-size: 3.125rem;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.cmainsubheading {
+    color: #6d6e71;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+@media (min-width: 992px) {
+    .cmainsubheading {
+        color: #6d6e71;
+        line-height: 1.5;
+        margin-bottom: 1.25rem;
+    }
+}
+
+
+.bggrandpa {
+    background: url(https://jessecarlbergproduction.azureedge.net/images/JES00284.jpg);
+    width: 63%;
+    height: 600px;
+    background-size: cover;
+    background-position: top;
+    position: absolute;
+    overflow: hidden;
+    left: 30%;
+    background-repeat: no-repeat;
+}
+
+
+
+.mat-card-none {
+    border: none;
+    padding: 0px 16px;
+    margin: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #fafafa;
+}
+
+.intro-text {
+    margin: 0;
+    position: absolute;
+    width: inherit;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.heroContainer {
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+}
+
+.homeHeroContainer {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.fixedHeader {
+    width: 100%;
+}
+
+.headerCard {
+    height: 300px;
+}
+
+.homeServices {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    min-height: 645px;
+}
+
+.intro-text .intro-lead-in {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 1em;
+}
+
+.intro-text .intro-heading {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.heroImg {
+    min-height: 275px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1083px) {
+    .intro-text .intro-heading {
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        font-size: 3em;
+        font-weight: 700;
+        line-height: 1em;
+    }
+
+    .intro-text {
+        margin: 0;
+        position: absolute;
+        width: inherit;
+        color: white;
+        text-align: center;
+        padding-top: 20%;
+        padding-bottom: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 1084px) {
+    .intro-text .intro-heading {
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: 1em;
+    }
+
+    .intro-text {
+        margin: 0;
+        position: absolute;
+        width: inherit;
+        color: white;
+        text-align: center;
+        padding-top: 10%;
+    }
+}
+
+.raisonCard {
+    background-image: url("https://jessecarlbergproduction.azureedge.net/images/palisades.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    margin-top: 10px;
+}
+
+.finCard {
+    background-image: url("https://jessecarlbergproduction.azureedge.net/images/flowers1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    margin-top: 10px;
+}
+
+.info-card {
+    z-index: 1;
+    width: 80%;
+    top: 10%;
+    left: 5%;
+}
+
+.fin-card {
+    z-index: 1;
+    width: 80%;
+    top: 10%;
+    right: 5%;
+    float: right;
+}
+
+@media only screen and (min-width: 768px) {
+    .info-card {
+        z-index: 1;
+        width: 50%;
+        top: 25%;
+        left: 5%;
+    }
+
+    .fin-card {
+        z-index: 1;
+        width: 50%;
+        top: 25%;
+        right: 5%;
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 1084px) {
+    .info-card {
+        z-index: 1;
+        width: 40%;
+        top: 25%;
+        left: 5%;
+    }
+
+    .fin-card {
+        z-index: 1;
+        width: 40%;
+        top: 25%;
+        right: 5%;
+        float: right;
+    }
+}
+
+
+.mpadding {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+}
+
+section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+section h3.section-subheading {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.m-hero-item {
+    height: auto;
+    padding: 0;
+    text-align: center;
+}
+
+.c-heading-2 {
+    font-size: 2em;
+    line-height: 2em;
+}
+
+.c-heading-1,
+.c-heading-2 {
+    letter-spacing: -0.01em;
+    font-weight: 100;
+}
+
+.m-highlight-feature picture.c-image {
+    width: 100%;
+    max-width: 100%;
+}
+
+picture.c-image {
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    .m-highlight-feature {
+        display: block;
+    }
+
+    .c-heading-2 {
+        font-size: 3em;
+        line-height: 2em;
+    }
+}
+
+.m-highlight-feature {
+    height: 500px;
+    position: relative;
+}
+
+.m-highlight-feature:before,
+.m-highlight-feature:after {
+    content: " ";
+    display: table;
+}
+
+@media only screen and (min-width: 768px) {
+    .headerCard {
+        height: 500px;
+        width: 100%;
+    }
+
+    .m-highlight-feature.f-align-left>div {
+        left: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .m-highlight-feature.f-align-right>div {
+        right: 0;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .m-highlight-feature>div {
+        width: 364px;
+        height: 408px;
+    }
+
+    .heroContainer {
+        height: 725px;
+    }
+}
+
+@media only screen and (min-width: 1084px) {
+    .headerCard {
+        height: 700px;
+        width: 100%;
+    }
+
+    .m-highlight-feature>div {
+        margin: 0 48px;
+        width: 316px;
+        height: 336px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .m-highlight-feature>div {
+        padding-left: 24px;
+        padding-right: 24px;
+        position: absolute;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        margin: 0 36px;
+        width: 316px;
+        height: 336px;
+        top: 24px;
+        top: calc(50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background: #fff;
+        color: #000;
+        -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.m-highlight-feature>div {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 60%;
+    text-align: center;
+}
+
+.mainPage {
+    overflow: hidden;
+}
+
+.service-card {
+    position: relative;
+    -ms-flex-item-align: start;
+    -ms-grid-row-align: start;
+    align-self: start;
+}
+
+
+.grid-container {
+    padding-left: 0%;
+    padding-right: 0%;
+    overflow: hidden;
+}
+
+
+@media screen and (min-width: 1500px) {
+    .grid-container {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+#news {
+    padding: 20px;
+  }
+  
+  #news .mat-list-item {
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+  }
+  
+  .articles {
+    margin-bottom: 50px;
+  }
+  
+  .newsDiv h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .newsDiv {
+    background: #80808003;
+    padding: 5px 10px 20px;
+    box-shadow: 0px 0px 3px #ebebeb;
+    margin-bottom: 20px;
+    height: 250px;
+    width: 300px;
+  }
+  
+  .newsbgparent {
+    width: 100%;
+    min-height: 600px;
+  }
+  
+  .newsbg {
+    width: 70%;
+    height: 585px;
+    background-size: cover;
+    background-position: right;
+    position: absolute;
+    overflow: hidden;
+    left: 30%;
+    background-repeat: no-repeat;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .newsbg {
+      width: 100%;
+      left: 0;
+      height: 360px;
+    }
+  }
+  
+  .newsbody {
+    font-size: 14px !important;
+  }
+  
+  .topnewsCard {
+    min-height: 300px;
+    max-width: 500px;
+  }
+  
+  p.date {
+    margin-bottom: 0px;
+    font-size: 10px;
+    color: #9b9b9b;
+    text-align: right;
+  }
+  
+  .news-card {
+    max-width: 500px;
+    margin: 2%;
+  }
+  
+  .newsbody {
+    font-size: 16px;
+  }
+  
+  .newsbody a {
+    cursor: pointer;
+    color: #673ab7;
+  }
+  
+  .indicators {
+    position: absolute;
+    bottom: -10%;
+  }
+  
+  .indicators li {
+    display: inline;
+  }
+  
+  .carousel .indicators {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
+  
+  .carousel .indicators .indicator-item {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 24px 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+  }
+  
+  .courseCard {
+    border-bottom-color: #743db4;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-radius: 0%;
+    -webkit-box-shadow: 0 15px 30px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 15px 30px 0 rgb(0 0 0 / 20%);
+  }
+  
+  .headericon {
+    height: 15px;
+  }
+  
+  .grandpaaparent {
+    height: 600px;
+  }
+  
+  .articles {
+    margin-top: 25px;
+  }
+  
+  .topBody {
+    font-size: smaller;
+    font-weight: 100;
+    line-height: 0.95;
+    color: darkgray;
+  }
+  
+  .marginB {
+    height: 50px;
+  }

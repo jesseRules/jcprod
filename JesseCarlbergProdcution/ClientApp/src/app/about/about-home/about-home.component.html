@@ -1,0 +1,98 @@
+<div class="aboutView grid-container">
+    <section class="mainPanel">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div id="text-main" class="text-main" style="visibility: visible; right: 0%; opacity: 1">
+                    <h2 class="c-heading-2">About Me</h2>
+                    <p>
+                        <a href="https://github.com/jesseRules" target="_blank">
+                            <img src="https://jessecarlbergproduction.azureedge.net/images/github.png" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/jcarlberg/" target="_blank">
+                            <img src="https://jessecarlbergproduction.azureedge.net/images/linkedin.png" />
+                        </a>
+                    </p>
+                    <p class="intro">
+                        I'm a full stack software dev based in the silicon prairie.
+                    </p>
+                    <p>
+                        I enjoy turning complex problems into simple, beautiful and
+                        intuitive solutions. When I'm not coding, terrorizing my children,
+                        or taking pics, you'll find me cooking, gardening or walking the
+                        dog.
+                    </p>
+                    <p>
+                        <button mat-raised-button color="accent" routerLink="/resume">
+                            Résumé
+                        </button>
+                        <button class="btnSpacer" mat-raised-button color="primary" routerLink="/contact">
+                            Contact me
+                        </button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <img class="circleHead" src="https://jessecarlbergproduction.azureedge.net/images/jcupdated.jpeg" alt="Jesse Rules" />
+            </div>
+        </div>
+    </section>
+
+    <section class="imagePanel mt-4">
+        <div class="row" gallerize>
+            <div class="col-md-3 col-sm-2" *ngFor="let img of imgData"><img mat-card-image [src]="img.srcUrl" /></div>
+        </div>
+    </section>
+
+    <mat-divider></mat-divider>
+<!-- 
+    <section id="testimonials" class="m-hero-item mpadding">
+        <h2 class="c-heading-2">Testimonials</h2>
+
+       
+    </section> -->
+
+    <section id="myskills" class="m-hero-item mpadding">
+        <h2 class="c-heading-2">Coding Experience</h2>
+        <div class="chartView">
+            <div style="position: relative; height:400px; width:100%">
+                <canvas baseChart width="400" 
+                height="400" 
+                [data]="mChartData" 
+                [type]="'bar'"
+                [options]="barChartOptions"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section id="myskills" class="m-hero-item mpadding">
+        <h2 class="c-heading-2">My Skills</h2>
+
+        <mat-card>
+            <div class="skillView">
+                <span class="skillTitle">Code Architecture </span>
+                <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+            </div>
+            <div class="skillView">
+                <span class="skillTitle">Agile development</span>
+                <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
+            </div>
+            <div class="skillView">
+                <span class="skillTitle">User experience design (UX)</span>
+                <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+            </div>
+            <div class="skillView">
+                <span class="skillTitle">Data Science</span>
+                <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
+            </div>
+            <div class="skillView">
+                <span class="skillTitle">{{ mentoringTxt }}</span>
+                <mat-progress-bar mode="determinate" value="60"></mat-progress-bar>
+            </div>
+            <div class="skillView">
+                <span class="skillTitle">{{ sixTxt }}</span>
+                <mat-progress-bar mode="determinate" value="92"></mat-progress-bar>
+            </div>
+        </mat-card>
+    </section>
+</div>

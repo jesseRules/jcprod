@@ -1,0 +1,264 @@
+.sidenav-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.mat-toolbar {
+  background: #fff !important;
+  color: #000000 !important;
+}
+
+.sidenav {
+  width: 200px;
+  min-height: 850px;
+  display: block;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.tempLogo {
+  height: 30px;
+}
+
+.navlisttop {
+  margin-top: 10px;
+}
+
+.navtemplogo {
+  height: 60px;
+}
+
+.navlogo {
+  image-rendering: optimizeQuality;
+  height: 50px;
+  padding-left: 5px;
+}
+
+.navIconBtn {
+  height: 50px !important;
+}
+
+.search-spacer {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.width-filler {
+  min-width: 250px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.logoutpacer {
+  height: 225px;
+  bottom: 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+.mat-icon-extended {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-repeat: no-repeat;
+  display: inline-block;
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+}
+
+.page-wrap {
+  height: 100%;
+}
+
+.sstheader {
+  font-weight: 400;
+  font-size: larger;
+  color: #973195;
+  padding-left: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbutton {
+  display: block;
+  margin: 0.625rem 0.625rem 0.5rem;
+  padding: 0;
+  font-weight: 400;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #495057;
+  position: relative;
+}
+
+.content {
+  flex: 1;
+  min-height: 800px;
+}
+
+.navfooter {
+  background-color: #e9ecef;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  height: 110px;
+  width: 100%;
+  bottom: 0%;
+  z-index: 3;
+}
+
+.active-link {
+  color: #743db4;
+}
+
+.routercontainer {
+  min-height: calc(100vh - 170px);
+  height: 100%;
+}
+
+.tbar-spacer {
+  flex: 1 1 auto;
+}
+
+.tempLogo {
+  height: 30px;
+}
+
+.footerlink {
+  text-decoration: none;
+  color: black;
+  font-size: small;
+}
+
+.whitebg {
+  background-color: white !important;
+}
+
+.logoimg {
+  height: 60px;
+}
+
+.copyRightF {
+  font-size: medium;
+}
+
+.mainfooter {
+  background-color: #e9ecef;
+}
+
+.navlisttop {
+  margin-top: 10px;
+}
+
+.navtemplogo {
+  height: 60px;
+}
+
+.whtmattoolbar {
+  background-color: white !important;
+}
+
+.routercontainer {
+  min-height: calc(100vh - 170px);
+  height: 100%;
+
+}
+
+.navlogoDesktop {
+  image-rendering: optimizeQuality;
+  height: 50px;
+  padding-left: 5px;
+  width: 90px;
+}
+
+.navIconDesktopBtn {
+  width: 90px;
+  height: 50px !important;
+}
+
+.tbar-spacer {
+  flex: 1 1 auto;
+}
+
+.tempLogo {
+  height: 30px;
+}
+
+.footerlink {
+  text-decoration: none;
+  color: black;
+  font-size: small;
+}
+
+.whitebg {
+  background-color: white !important;
+}
+
+.logoimg {
+  height: 60px;
+}
+
+.copyRightF {
+  font-size: medium;
+}
+
+.mainfooter {
+  background-color: #e9ecef;
+}
+
+.navlisttop {
+  margin-top: 10px;
+}
+
+.navtemplogo {
+  height: 60px;
+}
+
+.whtmattoolbar {
+  background-color: white !important;
+}
+
+.routercontainer {
+  min-height: calc(100vh - 170px);
+  height: 100%;
+}
+
+.navlogoDesktop {
+  image-rendering: optimizeQuality;
+  height: 50px;
+  padding-left: 5px;
+  width: 75px;
+}
+
+.navlogoMobile {
+  height: 40px;
+  padding-left: 5px;
+  width: 55px;
+}
+
+.navIconDesktopBtn {
+  width: 90px;
+  height: 50px !important;
+}
+
+.mainDivider {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 5;
+  left: 0;
+}

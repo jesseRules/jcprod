@@ -1,0 +1,49 @@
+<div class="photographyMain">
+    <div class="photographyHeader">
+        <h1 class="c-heading-2">JC Production Photography</h1>
+        <h3 class="section-subheading text-muted">
+            Making Memories & Websites Prettier
+        </h3>
+    </div>
+    <mat-divider [inset]="true"></mat-divider>
+    <div class="photoBody row mt-4">
+        <div class="col-md-6 col-sm-12">
+            <div class="photooverview">
+                <h2>Have camera and willing to make it Click</h2>
+                <p>
+                    People kept telling me that I took great photos, so I got a nicer
+                    camera and some way too expensive lenses and started taking even
+                    more pictures. The wife said I have to justify my expensive
+                    purchases, so here we are. And since I am a website developer most
+                    of the time, being a photographer makes it really easy to add
+                    content to my websites and apps I build for people. So, this all
+                    kind of works out.
+                </p>
+                <p>
+                    Long story short, I needed a hobby and it kind of grew into all
+                    this. Being a photographer has helped me in my main hustle of being
+                    a web dev and I wanted to branch out and take pics of rando people,
+                    not because my kids are tired of me taking their pics, but other
+                    reasons.
+                </p>
+                <p>
+                    Check out my photography:
+                    <a href="https://jessecarlbergphotography.com/" target="_blank">
+                        JesseCarlbergPhotography.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <mat-card>
+                <div class="photositepic">
+                    <img class="psitepic" src="https://jessecarlbergproduction.azureedge.net/images/jcphotographybig.jpg" />
+                </div>
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+<div class="row" gallerize>
+    <div class="col-sm-6 col-md-3" *ngFor="let img of data; index as i"><img mat-card-image [lightbox]="i"
+            [src]="img.srcUrl" /></div>
+</div>
